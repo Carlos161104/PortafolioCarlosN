@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #001a2c;
+    font-family: 'calibri';
+    color: aliceblue;
+}
+
+/*Barra navegacion*/
+header{
+    background-color: azure;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+    position:  fixed;
+    z-index: 9999;
+}
+.menu {
+    width: 900px;
+    margin: 0 auto;
+}
+.logo{
+    width: 70px;
+    float: left;
+    padding: 8px;
+}
+nav{
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 75px;
+    padding: 25px 0;
+    float: left;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #001a2c;
+    font-weight: bold;
+}
+nav ul li a::before{
+    display: block;
+    content: '';
+    width: 0;
+    background: #001a2c;
+    height: 5px;
+    top: 0;
+    position: absolute;
+}
+nav ul li a:hover::before{
+    width: 100%;
+    transition: .2s;
+}
+
+/*Imagen inicial*/
+.inicio {
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: azure;
+    padding: 225px;
+}
+.inicio h1{
+    font-size: 100px;
+}
+.inicio p{
+    font-size: 50px;
+}
+
+/*Sobre mi*/
+.Sec_Mi {
+    padding: 75px 250px 100px 250px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Sec_Mi h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 25px;
+}
+.Sec_Mi img{
+    width: 40%;
+    padding: 50px 50px 50px 50px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#Im, #Im2{
+    padding-bottom: 25px;
+}
+/*soft skills*/
+.Sec_SK{
+    padding: 75px 50px 100px 100px;
+    background-color: #00406C;
+    display: flex;
+    justify-content: space-evenly;
+    color: azure;
+}
+.Sec_SK h1{
+    text-align: center;
+    font-size: 60px;
+    padding: 25px;
+    padding-top: 140px;
+}
+.dropdown {
+    position: relative;
+    margin-bottom: 10px;
+    width: 500px;
+  }
+  .dropdown h3{
+    font-size: 25px;
+  }
+  .dropdown-text {
+    color: azure;
+    background-color: #001a2c;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+  }
+  .dropdown-text h3{
+    padding-top: 9px;
+    padding-left: 10px;
+  }
+  .Ico_SK {
+    width: 10%;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    color: #003356;
+    padding: 10px;
+    width: 500px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    transition: .5s;
+    display: block;
+  }
+  .dropdown:not(:hover) .dropdown-content {
+    transition: .5s;
+  }
+  
+  .dropdown:hover ~ #dra2 {
+    transition: .5s;
+    margin-top: 60px;
+  }
+  .dropdown:not(:hover) ~ #dra2 {
+    transition:.5s;
+    margin-top: 0;
+  }
+  #dra2:hover ~ #dra3 {
+    transition: .5s;
+    margin-top: 60px;
+  }
+  #dra2:not(:hover) ~ #dra3 {
+    transition: .5s;
+    margin-top: 0;
+  }
+  #dra3:hover ~ #dra4 {
+    transition: .5s;
+    margin-top: 80px;
+  }
+  #dra3:not(:hover) ~ #dra4 {
+    transition: .5s;
+    margin-top: 0;
+  }
+  #dra4:hover ~ #dra5 {
+    transition: .5s;
+    margin-top: 60px;
+  }
+  #dra4:not(:hover) ~ #dra5 {
+    transition: .5s;
+    margin-top: 0;
+  }
+  #dra4:hover ~ #dra5::after{
+    transition: .5s;
+  }
+  #dra4:not(:hover) ~ #dra5::after{
+    transition: .5s;
+  }
+  /*Hard Skills*/
+.Sec_HS{
+    padding: 75px 50px 100px 100px;
+    justify-content: space-evenly;
+    color: aliceblue;
+}
+.Titulo_Sec{
+    text-align: center;
+    font-size: 50px;
+    padding: 25px;
+    padding-top: 0;
+}
+.Ren_Hk{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.Hk_1{
+    background-color: #0077b6;
+    color: aliceblue;
+    height: 250px;
+    width: 400px;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 1rem;
+}
+.Hk_1 h1{
+    text-align: center;
+    font-size: 30px;
+}
+.Hk_1:hover{
+    height: 275px;
+    width: 425px;
+    transition: .5s;
+    z-index: 100;
+}
+.Hk_1:not(:hover){
+    height: 250px;
+    width: 400px;
+    transition: .5s;
+    z-index: 100;
+}
+.Hk_Text{
+  width: 300px;
+}
+/*Proyectos*/
+.Sec_Pro{
+    padding: 75px 50px 100px 100px;
+    background-color: #00406C;
+    justify-content: space-evenly;
+    color: azure;
+}
+.Cont_PR {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.Eje_PR{
+  display: flex;
+  background-color: #001a2c;
+  width: 25%;
+  height: 375px ;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: #001a2c solid 1px;
+}
+.Eje_PR:hover {
+  width: 100%;
+  height: 375px ;
+  overflow: hidden;
+  transition: .5s;
+}
+.Eje_PR:not(:hover){
+  transition: .5s;
+  width: 25%;
+  height: 375px ; 
+}
+.Int_Eje{
+  width: 500px;
+  padding: 20px;
+}
+.Int_Eje h2{
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+/*Contactame*/
+.Sec_Con{
+  padding-top: 30px;
+  text-align: center;
+}
+.Titulo_Foo{
+  text-align: center;
+  font-size: 50px;
+  padding: 5px;
+  padding-top: 0;
+}
+.Enlaces{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Redes {
+  padding: 10px 20px 10px 20px;
+}
+footer h1{
+  text-align: center;
+  font-size: 30px;
+}
+footer h3 {
+  text-align: center;
+}
+footer{
+  padding-bottom: 30px;
+}
+footer img {
+  width: 75px;
+}
